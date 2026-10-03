@@ -1,80 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Shikhar Academy – Coaching for Class 9–12, JEE & NEET</title>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Shikhar Academy – Coaching for Class 9–12, JEE & NEET</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header><div class="wrap">
-<a class="logo" href="#top">Shikhar Academy</a>
-<nav aria-label="Main"><a href="#courses">Courses</a><a href="#faculty">Faculty</a><a href="#results">Results</a><a href="#schedule">Schedule</a><a href="#notices">Notices</a></nav>
-<a class="btn alt" href="#admission" style="padding:8px 14px">Apply</a>
-</div></header>
-<div class="ticker" id="top"><div class="wrap" id="ticker" aria-live="polite"></div></div>
+    <header>
+        <div class="wrap">
+            <a class="logo" href="#top">Shikhar Academy</a>
+            <nav aria-label="Main"><a href="#courses">Courses</a><a href="#faculty">Faculty</a><a href="#results">Results</a><a href="#schedule">Schedule</a><a href="#notices">Notices</a></nav>
+            <a class="btn alt" href="#admission" style="padding:8px 14px">Apply</a>
+        </div>
+    </header>
+    <div class="ticker" id="top">
+        <div class="wrap" id="ticker" aria-live="polite"></div>
+    </div>
 
-<main>
-<section class="hero"><div class="wrap">
-<div>
-<h1>Strong basics. Steady marks. Real results.</h1>
-<p class="lead">Small batches for Class 9–12, JEE and NEET, taught by teachers who know every student by name. New batches start on 1 November.</p>
-<div class="cta"><a class="btn" href="#admission">Apply for admission</a><a class="btn ghost" href="#courses">See batches</a></div>
-</div>
-<div class="board"><h3>Today’s classes</h3><ul id="today"></ul></div>
-</div></section>
+    <main>
+        <section class="hero">
+            <div class="wrap">
+                <div>
+                    <h1>Strong basics. Steady marks. Real results.</h1>
+                    <p class="lead">Small batches for Class 9–12, JEE and NEET, taught by teachers who know every student by name. New batches start on 1 November.</p>
+                    <div class="cta"><a class="btn" href="#admission">Apply for admission</a><a class="btn ghost" href="#courses">See batches</a></div>
+                </div>
+                <div class="board">
+                    <h3>Today’s classes</h3>
+                    <ul id="today"></ul>
+                </div>
+            </div>
+        </section>
 
-<section id="courses" style="padding-top:24px"><div class="wrap">
-<h2>Courses and batches</h2>
-<p class="lead">Pick a program to see batch timings, fees and seats left.</p>
-<div class="tabs" role="tablist" id="ctabs"></div>
-<div class="grid" id="cgrid"></div>
-</div></section>
+        <section id="courses" style="padding-top:24px">
+            <div class="wrap">
+                <h2>Courses and batches</h2>
+                <p class="lead">Pick a program to see batch timings, fees and seats left.</p>
+                <div class="tabs" role="tablist" id="ctabs"></div>
+                <div class="grid" id="cgrid"></div>
+            </div>
+        </section>
 
-<section id="faculty" style="background:var(--surface)"><div class="wrap">
-<h2>Meet your teachers</h2>
-<div class="grid" id="fgrid"></div>
-</div></section>
+        <section id="faculty" style="background:var(--surface)">
+            <div class="wrap">
+                <h2>Meet your teachers</h2>
+                <div class="grid" id="fgrid"></div>
+            </div>
+        </section>
 
-<section id="results"><div class="wrap">
-<h2>Success stories</h2>
-<div class="stats" id="stats"></div>
-<div class="grid" id="sgrid"></div>
-</div></section>
+        <section id="results">
+            <div class="wrap">
+                <h2>Success stories</h2>
+                <div class="stats" id="stats"></div>
+                <div class="grid" id="sgrid"></div>
+            </div>
+        </section>
 
-<section id="schedule" style="background:var(--surface)"><div class="wrap">
-<h2>Weekly class schedule</h2>
-<div class="tabs" role="tablist" id="dtabs"></div>
-<div class="tw"><table><thead><tr><th>Time</th><th>Batch</th><th>Subject</th><th>Teacher</th></tr></thead><tbody id="sbody"></tbody></table></div>
-</div></section>
+        <section id="schedule" style="background:var(--surface)">
+            <div class="wrap">
+                <h2>Weekly class schedule</h2>
+                <div class="tabs" role="tablist" id="dtabs"></div>
+                <div class="tw">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Batch</th>
+                                <th>Subject</th>
+                                <th>Teacher</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
 
-<section id="notices"><div class="wrap two">
-<div><h2>Notice board</h2><ul class="list" id="nlist"></ul></div>
-<div><h2>Study material</h2><ul class="list" id="mlist"></ul></div>
-</div></section>
+        <section id="notices">
+            <div class="wrap two">
+                <div>
+                    <h2>Notice board</h2>
+                    <ul class="list" id="nlist"></ul>
+                </div>
+                <div>
+                    <h2>Study material</h2>
+                    <ul class="list" id="mlist"></ul>
+                </div>
+            </div>
+        </section>
 
-<section id="admission" style="background:var(--surface)"><div class="wrap">
-<h2>Admission and inquiry</h2>
-<p class="lead">Fill this in and we’ll continue on WhatsApp. A counsellor replies within 2 hours, 9 am to 8 pm.</p>
-<form id="form" novalidate>
-<div><label for="n">Student name</label><input id="n" required autocomplete="name"></div>
-<div><label for="p">Parent’s phone</label><input id="p" type="tel" required inputmode="tel" autocomplete="tel" placeholder="10-digit number"></div>
-<div><label for="c">Class / program</label><select id="c" required></select></div>
-<div><label for="s">Preferred batch</label><select id="s"><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Weekend</option></select></div>
-<div class="full"><label for="q">Question (optional)</label><textarea id="q" rows="3"></textarea></div>
-<div class="full"><button class="btn" type="submit">Send on WhatsApp</button></div>
-<div class="msg" id="fmsg" role="status"></div>
-</form>
-</div></section>
-</main>
+        <section id="admission" style="background:var(--surface)">
+            <div class="wrap">
+                <h2>Admission and inquiry</h2>
+                <p class="lead">Fill this in and we’ll continue on WhatsApp. A counsellor replies within 2 hours, 9 am to 8 pm.</p>
+                <form id="form" novalidate>
+                    <div><label for="n">Student name</label><input id="n" required autocomplete="name"></div>
+                    <div><label for="p">Parent’s phone</label><input id="p" type="tel" required inputmode="tel" autocomplete="tel" placeholder="10-digit number"></div>
+                    <div><label for="c">Class / program</label><select id="c" required></select></div>
+                    <div><label for="s">Preferred batch</label><select id="s"><option>Morning</option><option>Afternoon</option><option>Evening</option><option>Weekend</option></select></div>
+                    <div class="full"><label for="q">Question (optional)</label><textarea id="q" rows="3"></textarea></div>
+                    <div class="full"><button class="btn" type="submit">Send on WhatsApp</button></div>
+                    <div class="msg" id="fmsg" role="status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
 
-<footer><div class="wrap">
-<p><b id="fname"></b> · 2nd Floor, Station Road, Your City · <span id="fphone"></span></p>
-<p>Open Monday to Saturday, 9 am – 8 pm. Replace this demo content with your institute’s details in the CONFIG block of the page script.</p>
-</div></footer>
-<a class="wa" id="wa" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+    <footer>
+        <div class="wrap">
+            <p><b id="fname"></b> · 2nd Floor, Station Road, Your City · <span id="fphone"></span></p>
+            <p>Open Monday to Saturday, 9 am – 8 pm. Replace this demo content with your institute’s details in the CONFIG block of the page script.</p>
+        </div>
+    </footer>
+    <a class="wa" id="wa" href="#" target="_blank" rel="noopener">WhatsApp us</a>
 
-<script src="../js/script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
